@@ -5,7 +5,7 @@ The College Finder Web App simplifies the college search process for students an
 ### 🔗 Hosted link: [CollegeDunia](https://colleges-two.vercel.app/#)
 
 ## 🧑‍💻Screenshots
-<img src="" width="500px">
+<img src="https://github.com/AniketMujbaile/colleges/blob/main/Colleges-Table.png" width="500px">
 <hr/>
 
 ## 🛠️Technologies Used
@@ -50,7 +50,7 @@ The College Finder Web App simplifies the college search process for students an
    - Interactive Interface: A clean and interactive user interface makes it easy to navigate and find the information you need.
 
    - Apply Now: Quickly access the college website to apply.
-   
+
    - Download Brochure: Download college brochures directly from the application.
 
 
