@@ -1,0 +1,172 @@
+[
+  {
+    "rank": 1,
+    "collegeName": "IIT Madras - Indian Institute of Technology - [IITM], Chennai",
+    "course": "B.Tech Computer Science Engineering",
+    "fees": 209560,
+    "feesDescription": "1st Year Fees",
+    "placement": {
+      "average": 2148900,
+      "highest": 1980000
+    },
+    "userRating": 8.6,
+    "ranking": "#3/131 in India",
+    "location": "Chennai, Tamil Nadu",
+    "cutoff": "JEE-Advanced 2023 Cutoff: 144",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/IIT_Madras_Logo.svg/800px-IIT_Madras_Logo.svg.png",
+    "featured": true
+  },
+  {
+    "rank": 2,
+    "collegeName": "IIT Bombay - Indian Institute of Technology - [IITB], Mumbai",
+    "course": "B.Tech Computer Science and Engineering",
+    "fees": 220000,
+    "feesDescription": "1st Year Fees",
+    "placement": {
+      "average": 2780000,
+      "highest": 2600000
+    },
+    "userRating": 8.8,
+    "ranking": "#1/131 in India",
+    "location": "Mumbai, Maharashtra",
+    "cutoff": "JEE-Advanced 2023 Cutoff: 145",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1d/Indian_Institute_of_Technology_Bombay_Logo.svg/800px-Indian_Institute_of_Technology_Bombay_Logo.svg.png",
+    "featured": false
+  },
+  {
+    "rank": 3,
+    "collegeName": "IIT Delhi - Indian Institute of Technology - [IITD], New Delhi",
+    "course": "B.Tech Computer Science and Engineering",
+    "fees": 210000,
+    "feesDescription": "1st Year Fees",
+    "placement": {
+      "average": 2280000,
+      "highest": 2500000
+    },
+    "userRating": 8.7,
+    "ranking": "#2/131 in India",
+    "location": "New Delhi, Delhi",
+    "cutoff": "JEE-Advanced 2023 Cutoff: 146",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/f/fd/Indian_Institute_of_Technology_Delhi_Logo.svg/800px-Indian_Institute_of_Technology_Delhi_Logo.svg.png",
+    "featured": true
+  },
+  {
+    "rank": 4,
+    "collegeName": "IIT Kharagpur - Indian Institute of Technology - [IIT KGP], Kharagpur",
+    "course": "B.Tech Computer Science and Engineering",
+    "fees": 210000,
+    "feesDescription": "1st Year Fees",
+    "placement": {
+      "average": 1980000,
+      "highest": 2700000
+    },
+    "userRating": 8.5,
+    "ranking": "#4/131 in India",
+    "location": "Kharagpur, West Bengal",
+    "cutoff": "JEE-Advanced 2023 Cutoff: 147",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/1c/IIT_Kharagpur_Logo.svg/800px-IIT_Kharagpur_Logo.svg.png",
+    "featured": false
+  },
+  {
+    "rank": 5,
+    "collegeName": "IIT Kanpur - Indian Institute of Technology - [IITK], Kanpur",
+    "course": "B.Tech Computer Science and Engineering",
+    "fees": 210000,
+    "feesDescription": "1st Year Fees",
+    "placement": {
+      "average": 2100000,
+      "highest": 2300000
+    },
+    "userRating": 8.4,
+    "ranking": "#5/131 in India",
+    "location": "Kanpur, Uttar Pradesh",
+    "cutoff": "JEE-Advanced 2023 Cutoff: 148",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/IIT_Kanpur_Logo.svg/800px-IIT_Kanpur_Logo.svg.png",
+    "featured": true
+  },
+  {
+    "rank": 6,
+    "collegeName": "IIT Guwahati - Indian Institute of Technology - [IITG], Guwahati",
+    "course": "B.Tech Computer Science and Engineering",
+    "fees": 210000,
+    "feesDescription": "1st Year Fees",
+    "placement": {
+      "average": 1920000,
+      "highest": 2500000
+    },
+    "userRating": 8.3,
+    "ranking": "#6/131 in India",
+    "location": "Guwahati, Assam",
+    "cutoff": "JEE-Advanced 2023 Cutoff: 149",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/12/IIT_Guwahati_Logo.svg/800px-IIT_Guwahati_Logo.svg.png",
+    "featured": false
+  },
+  {
+    "rank": 7,
+    "collegeName": "IIT Roorkee - Indian Institute of Technology - [IITR], Roorkee",
+    "course": "B.Tech Computer Science and Engineering",
+    "fees": 210000,
+    "feesDescription": "1st Year Fees",
+    "placement": {
+      "average": 1980000,
+      "highest": 2400000
+    },
+    "userRating": 8.2,
+    "ranking": "#7/131 in India",
+    "location": "Roorkee, Uttarakhand",
+    "cutoff": "JEE-Advanced 2023 Cutoff: 150",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/6/6f/Indian_Institute_of_Technology_Roorkee_logo.png",
+    "featured": true
+  },
+  {
+    "rank": 8,
+    "collegeName": "BITS Pilani - Birla Institute of Technology and Science, Pilani",
+    "course": "B.E. Computer Science",
+    "fees": 364000,
+    "feesDescription": "1st Year Fees",
+    "placement": {
+      "average": 2160000,
+      "highest": 3200000
+    },
+    "userRating": 8.1,
+    "ranking": "#8/131 in India",
+    "location": "Pilani, Rajasthan",
+    "cutoff": "BITSAT 2023 Cutoff: 380",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/d/d3/BITS_Pilani-Logo.svg/800px-BITS_Pilani-Logo.svg.png",
+    "featured": false
+  },
+  {
+    "rank": 9,
+    "collegeName": "NIT Tiruchirappalli - National Institute of Technology, Tiruchirappalli",
+    "course": "B.Tech Computer Science and Engineering",
+    "fees": 172500,
+    "feesDescription": "1st Year Fees",
+    "placement": {
+      "average": 1560000,
+      "highest": 2500000
+    },
+    "userRating": 8.0,
+    "ranking": "#9/131 in India",
+    "location": "Tiruchirappalli, Tamil Nadu",
+    "cutoff": "JEE-Main 2023 Cutoff: 165",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/8/8b/National_Institute_of_Technology_Trichy_Logo.png",
+    "featured": true
+  },
+  {
+    "rank": 10,
+    "collegeName": "IIT Ropar - Indian Institute of Technology - [IIT RPR], Rupnagar",
+    "course": "B.Tech Computer Science and Engineering",
+    "fees": 210000,
+    "feesDescription": "1st Year Fees",
+    "placement": {
+      "average": 1800000,
+      "highest": 2400000
+    },
+    "userRating": 7.9,
+    "ranking": "#10/131 in India",
+    "location": "Rupnagar, Punjab",
+    "cutoff": "JEE-Advanced 2023 Cutoff: 151",
+    "logo": "https://upload.wikimedia.org/wikipedia/en/f/f9/Indian_Institute_of_Technology_Ropar_logo.png",
+    "featured": false
+  }
+]
