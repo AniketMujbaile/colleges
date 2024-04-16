@@ -1,3 +1,59 @@
+# CollegeDunia
+
+The College Finder Web App simplifies the college search process for students and parents. It offers detailed information on colleges, including rankings, placement stats, user ratings, and more. Find the perfect college based on course, location, fees, and other criteria.
+
+### 🔗 Hosted link: [CollegeDunia](https://colleges-two.vercel.app/#)
+
+## 🧑‍💻Screenshots
+<img src="" width="500px">
+<hr/>
+
+## 🛠️Technologies Used
+
+  - React.js: A JavaScript library for building user interfaces.
+
+  - JavaScript (ES6+): The programming language used to build the application logic.
+
+  - HTML/CSS: Markup and styling languages for structuring and designing the user interface.
+
+  - JSON: Data format used to store college information.
+
+  - npm: The package manager for JavaScript used to install project dependencies.
+
+## Getting Started
+
+  - Clone the repository to your local machine.
+
+  - Navigate to the project directory.
+
+  - Install dependencies using 
+    ```bash
+     npm install
+    ```
+  - Start the development server using npm start
+    ```bash
+     npm start
+    ```
+  - Access the application in your web browser at 
+    ```bash
+     http://localhost:3000
+    ```
+
+## ✨Features
+   
+   - Search Functionality: Easily search for colleges based on name, location, or course.
+
+   - Sorting Options: Sort colleges by various criteria such as ranking, fees, and user ratings.
+
+   - Detailed Information: Get detailed information about each college, including rankings, placement statistics, user ratings, and more.
+
+   - Interactive Interface: A clean and interactive user interface makes it easy to navigate and find the information you need.
+
+   - Apply Now: Quickly access the college website to apply.
+   
+   - Download Brochure: Download college brochures directly from the application.
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
