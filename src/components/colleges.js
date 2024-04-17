@@ -117,42 +117,42 @@ const CollegeTable = () => {
             <tr>
               <th
                 scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer bg-sky-200"
                 onClick={() => handleSort("rank")}
               >
                 CD Rank
               </th>
               <th
                 scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer bg-sky-200"
                 onClick={() => handleSort("collegeName")}
               >
                 Colleges
               </th>
               <th
                 scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer bg-sky-200"
                 onClick={() => handleSort("fees")}
               >
                 Course Fees
               </th>
               <th
                 scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer bg-sky-200"
                 onClick={() => handleSort("placement")}
               >
                 Placement
               </th>
               <th
                 scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer bg-sky-200"
                 onClick={() => handleSort("userRating")}
               >
                 User Reviews
               </th>
               <th
                 scope="col"
-                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
+                className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer bg-sky-200"
                 onClick={() => handleSort("ranking")}
               >
                 Ranking
@@ -161,7 +161,7 @@ const CollegeTable = () => {
           </thead>
           <tbody className="bg-white divide-y divide-gray-200">
             {filteredColleges.map((college, index) => (
-              <tr key={index}>
+              <tr key={index} className={college.featured ? 'bg-red-50' : ''}>
                 <td className="px-6 py-4 whitespace-nowrap">
                   <div className="text-sm text-gray-500 text-center">
                     #{college.rank}
@@ -271,7 +271,9 @@ const CollegeTable = () => {
                 </td>
                 <div className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                   <div>{college.userRating}/10</div>
-                  <div className="mt-1">Based on {college.usersRating} users</div>
+                  <div className="mt-1">
+                    Based on {college.usersRating} users
+                  </div>
                 </div>
                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
                   <div>{college.ranking}</div>
@@ -289,280 +291,3 @@ const CollegeTable = () => {
 };
 
 export default CollegeTable;
-
-// import React, { useState, useEffect } from "react";
-// import collegeData from "./colleges.json";
-// import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-// import {
-//   faCheckCircle,
-//   faDownload,
-//   faPlusCircle,
-// } from "@fortawesome/free-solid-svg-icons";
-
-// const CollegeTable = () => {
-//   const [colleges, setColleges] = useState([]);
-//   const [filteredColleges, setFilteredColleges] = useState([]);
-//   const [searchTerm, setSearchTerm] = useState("");
-//   const [sortColumn, setSortColumn] = useState(null);
-//   const [sortDirection, setSortDirection] = useState(null);
-//   const [visibleRows, setVisibleRows] = useState(10);
-//   const [showFlashMessage, setShowFlashMessage] = useState(false);
-
-//   useEffect(() => {
-//     setColleges(collegeData);
-//     setFilteredColleges(collegeData.slice(0, 10));
-//   }, []);
-
-//   useEffect(() => {
-//     const filtered = colleges.filter((college) =>
-//       college.collegeName.toLowerCase().includes(searchTerm.toLowerCase())
-//     );
-//     setFilteredColleges(filtered.slice(0, visibleRows));
-//   }, [colleges, searchTerm, visibleRows]);
-
-//   useEffect(() => {
-//     if (sortColumn) {
-//       const sorted = [...filteredColleges].sort((a, b) => {
-//         const aValue = a[sortColumn];
-//         const bValue = b[sortColumn];
-//         if (aValue < bValue) return sortDirection === "asc" ? -1 : 1;
-//         if (aValue > bValue) return sortDirection === "asc" ? 1 : -1;
-//         return 0;
-//       });
-//       setFilteredColleges(sorted);
-//     }
-//   }, [sortColumn, sortDirection, filteredColleges]);
-
-//   const handleScroll = () => {
-//     const scrollHeight = document.documentElement.scrollHeight;
-//     const scrollTop = document.documentElement.scrollTop;
-//     const clientHeight = document.documentElement.clientHeight;
-//     if (scrollTop + clientHeight >= scrollHeight) {
-//       setVisibleRows((prevRows) => prevRows + 10);
-//     }
-//   };
-
-//   useEffect(() => {
-//     window.addEventListener("scroll", handleScroll);
-//     return () => window.removeEventListener("scroll", handleScroll);
-//   }, []);
-
-//   const handleSort = (column) => {
-//     if (sortColumn === column) {
-//       setSortDirection(sortDirection === "asc" ? "desc" : "asc");
-//     } else {
-//       setSortColumn(column);
-//       setSortDirection("asc");
-//     }
-//   };
-
-//   const handleApplyNow = (collegeName) => {
-//      window.location.href = `https://example.com/apply/${collegeName}`;
-//   };
-
-//   const handleDownloadBrochure = (collegeName) => {
-//     setShowFlashMessage(true);
-//     setTimeout(() => {
-//       setShowFlashMessage(false);
-//     }, 2000);
-//     console.log(`Downloading brochure for ${collegeName}`);
-//   };
-
-//   const handleAddToCompare = (collegeName) => {
-//     console.log(`Adding ${collegeName} to compare list`);
-//   };
-
-//   return (
-//     <div className="flex flex-col">
-//       <div className="flex justify-center mb-4">
-//         <input
-//           type="text"
-//           placeholder="Search by college name"
-//           value={searchTerm}
-//           onChange={(e) => setSearchTerm(e.target.value)}
-//           className="px-4 py-2 border border-gray-300 rounded-l-md focus:outline-none focus:ring-2 focus:ring-blue-500"
-//         />
-//       </div>
-//       <div className="overflow-x-auto">
-//         <table className="min-w-full divide-y divide-gray-200">
-//           <thead className="bg-gray-50">
-//             <tr>
-//               <th
-//                 scope="col"
-//                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
-//                 onClick={() => handleSort("rank")}
-//               >
-//                 CD Rank
-//               </th>
-//               <th
-//                 scope="col"
-//                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
-//                 onClick={() => handleSort("collegeName")}
-//               >
-//                 Colleges
-//               </th>
-//               <th
-//                 scope="col"
-//                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
-//                 onClick={() => handleSort("fees")}
-//               >
-//                 Course Fees
-//               </th>
-//               <th
-//                 scope="col"
-//                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
-//                 onClick={() => handleSort("placement")}
-//               >
-//                 Placement
-//               </th>
-//               <th
-//                 scope="col"
-//                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
-//                 onClick={() => handleSort("userRating")}
-//               >
-//                 User Reviews
-//               </th>
-//               <th
-//                 scope="col"
-//                 className="px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider cursor-pointer"
-//                 onClick={() => handleSort("ranking")}
-//               >
-//                 Ranking
-//               </th>
-//             </tr>
-//           </thead>
-//           <tbody className="bg-white divide-y divide-gray-200">
-//             {filteredColleges.map((college, index) => (
-//               <tr key={index}>
-//                 <td className="px-6 py-4 whitespace-nowrap">
-//                   <div className="text-sm text-gray-500">{college.rank}</div>
-//                 </td>
-//                 <td className="px-6 py-4 whitespace-nowrap">
-//                   <div className="flex items-center">
-//                     <div className="flex-shrink-0 h-10 w-10">
-//                       <img
-//                         className="h-10 w-10 rounded-full"
-//                         src={college.logo}
-//                         alt=""
-//                       />
-//                     </div>
-//                     <div className="ml-4">
-//                       <div className="text-sm font-medium text-gray-900">
-//                         {college.collegeName}
-//                       </div>
-//                       <div className="text-sm text-gray-500">
-//                         {college.location}
-//                       </div>
-//                       <div className="text-sm text-gray-500">
-//                         {college.course}
-//                       </div>
-//                       <div className="text-sm text-gray-500">
-//                         {college.cutoff}
-//                       </div>
-//                       <div className="flex items-center mt-2">
-//                         <a
-//                           href="#"
-//                           className="px-3 text-amber-500 mr-2 text-center text-decoration-none"
-//                           onClick={() => handleApplyNow(college.collegeName)}
-//                         >
-//                           <FontAwesomeIcon icon={faCheckCircle} /> Apply Now
-//                         </a>
-//                         <a
-//                           href="#"
-//                           className="px-3 py-1 text-green-500 mr-2 text-center text-decoration-none"
-//                           onClick={() =>
-//                             handleDownloadBrochure(college.collegeName)
-//                           }
-//                         >
-//                           <FontAwesomeIcon icon={faDownload} /> Download
-//                           Brochure
-//                         </a>
-//                         <a
-//                           href="#"
-//                           className="px-3 py-1 text-gray-500 text-center text-decoration-none"
-//                           onClick={() =>
-//                             handleAddToCompare(college.collegeName)
-//                           }
-//                         >
-//                           <FontAwesomeIcon icon={faPlusCircle} /> Add To Compare
-//                         </a>
-//                       </div>
-//                       {showFlashMessage && (
-//                         <div className="text-sm text-green-500 mt-2">
-//                           Downloading brochure...
-//                         </div>
-//                       )}
-//                     </div>
-//                   </div>
-//                 </td>
-//                 <td className="px-6 py-4 whitespace-nowrap">
-//                   <div className="text-sm text-gray-900">
-//                     <div className="text-green-500">
-//                       ₹{college.fees.toLocaleString()}
-//                     </div>
-//                   </div>
-//                   <div className="text-sm text-gray-500">
-//                     {college.feesDescription}
-//                   </div>
-//                   <br />
-//                   <a
-//                     href="#"
-//                     className="px-3 py-1 text-amber-500 text-decoration-none"
-//                   >
-//                     <FontAwesomeIcon icon={faPlusCircle} /> Compare Fees
-//                   </a>
-//                 </td>
-//                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-//                   <div>
-//                     {college.placement.average ? (
-//                       <div>
-//                         Average Package:
-//                         <span className="text-green-500">
-//                           {" "}
-//                           ₹{college.placement.average.toLocaleString()}
-//                         </span>
-//                       </div>
-//                     ) : (
-//                       ""
-//                     )}
-//                   </div>
-//                   <div>
-//                     {college.placement.highest ? (
-//                       <div>
-//                         Highest Package:
-//                         <span className="text-green-500">
-//                           {" "}
-//                           ₹{college.placement.highest.toLocaleString()}
-//                         </span>
-//                       </div>
-//                     ) : (
-//                       ""
-//                     )}
-//                   </div>
-//                   <br />
-//                   <a
-//                     href="#"
-//                     className="px-3 py-1 text-amber-500 text-decoration-none"
-//                   >
-//                     <FontAwesomeIcon icon={faPlusCircle} /> Compare Placement
-//                   </a>
-//                 </td>
-//                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-//                   <div>{college.userRating}/10</div>
-//                 </td>
-//                 <td className="px-6 py-4 whitespace-nowrap text-sm text-gray-500">
-//                   <div>{college.ranking}</div>
-//                   {college.featured && (
-//                     <div className="text-green-500">Featured</div>
-//                   )}
-//                 </td>
-//               </tr>
-//             ))}
-//           </tbody>
-//         </table>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default CollegeTable;

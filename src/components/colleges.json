@@ -15,7 +15,7 @@
     "location": "Chennai, Tamil Nadu",
     "cutoff": "JEE-Advanced 2023 Cutoff: 144",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/6/69/IIT_Madras_Logo.svg/800px-IIT_Madras_Logo.svg.png",
-    "featured": true,
+    "featured": false,
     "applyUrl": "https://www.iitm.ac.in/admissions/undergraduate",
     "brochureUrl": "https://www.iitm.ac.in/admissions/undergraduate/brochure.pdf"
   },
@@ -95,7 +95,7 @@
     "location": "Kanpur, Uttar Pradesh",
     "cutoff": "JEE-Advanced 2023 Cutoff: 148",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/a/a3/IIT_Kanpur_Logo.svg/800px-IIT_Kanpur_Logo.svg.png",
-    "featured": true,
+    "featured": false,
     "applyUrl": "https://www.iitk.ac.in/admissions/undergraduate",
     "brochureUrl": "https://www.iitk.ac.in/admissions/undergraduate/brochure.pdf"
   },
@@ -175,7 +175,7 @@
     "location": "Tiruchirappalli, Tamil Nadu",
     "cutoff": "JEE-Main 2023 Cutoff: 165",
     "logo": "https://upload.wikimedia.org/wikipedia/en/8/8b/National_Institute_of_Technology_Trichy_Logo.png",
-    "featured": true,
+    "featured": false,
     "applyUrl": "https://www.nitt.edu/admissions/undergraduate",
     "brochureUrl": "https://www.nitt.edu/admissions/undergraduate/brochure.pdf"
   },
@@ -215,7 +215,7 @@
     "location": "Hyderabad, Telangana",
     "cutoff": "JEE-Advanced 2023 Cutoff: 152",
     "logo": "https://upload.wikimedia.org/wikipedia/en/thumb/1/19/IIT_Hyderabad_Insignia.svg/800px-IIT_Hyderabad_Insignia.svg.png",
-    "featured": true,
+    "featured": false,
     "applyUrl": "https://www.iith.ac.in/admissions/undergraduate",
     "brochureUrl": "https://www.iith.ac.in/admissions/undergraduate/brochure.pdf"
   },
