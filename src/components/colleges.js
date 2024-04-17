@@ -238,11 +238,11 @@ const CollegeTable = () => {
                   <div>
                     {college.placement.average ? (
                       <div>
-                        Average Package:
                         <span className="text-green-500">
                           {" "}
                           ₹{college.placement.average.toLocaleString()}
-                        </span>
+                        </span> <br/>
+                        Average Package
                       </div>
                     ) : (
                       ""
@@ -251,11 +251,11 @@ const CollegeTable = () => {
                   <div>
                     {college.placement.highest ? (
                       <div>
-                        Highest Package:
                         <span className="text-green-500">
                           {" "}
                           ₹{college.placement.highest.toLocaleString()}
-                        </span>
+                        </span> <br/>
+                        Highest Package   
                       </div>
                     ) : (
                       ""
